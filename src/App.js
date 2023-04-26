@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import { Fragment } from 'react';
 import './App.css';
+import { Card } from './component/card';
+
+
 
 function App() {
+ 
   return (
+    <Fragment>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card img="tshirt1.jpg" color="red" itemname='T-shirt'description='Cotton Crew-Neck T-shirt'mrp='350'rating="rating: 3"/>
+      <Card img="tshirt2.jpg" color="red" itemname='T-shirt'description='Cotton Crew-Neck T-shirt'mrp='500'rating="rating: 4"/>
+      <Card img="tshirt3.jpg" color="red" itemname='T-shirt'description='Cotton Crew-Neck T-shirt'mrp='450'rating="rating: 4"/>
+      </div>
+      <div className="App">
+      <Card img="tshirt4.jpg" color="red" itemname='T-shirt'description='Cotton Crew-Neck T-shirt'mrp='600'rating="rating: 1"/>
+      <Card img="tshirt5.jpg" color="red" itemname='T-shirt'description='Cotton Crew-Neck T-shirt'mrp='400'rating="rating: 5"/>
     </div>
+  
+    </Fragment>
   );
 }
 
